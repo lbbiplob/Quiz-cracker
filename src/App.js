@@ -6,6 +6,7 @@ import Layouts from './Layouts/Layouts';
 import Statistics from './components/Statistics/Statistics';
 import Blogs from './components/Blogs/Blogs';
 import Quizes from './components/Quizes/Quizes';
+import StartQuiz from './components/StartQuiz/StartQuiz';
 
 function App() {
   const router = createBrowserRouter([
@@ -25,6 +26,10 @@ function App() {
         {
           path: 'quiz',
           element: <Quizes></Quizes>
+        },
+        {
+          path: 'quiz/:quizId',
+          element: <StartQuiz></StartQuiz>
         },
         {
           path: 'statistics',

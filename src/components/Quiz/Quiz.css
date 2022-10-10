@@ -13,13 +13,18 @@
 .card h3,p {
     margin: 3px;
 }
-.card-btn{
+.card-btn {
     margin: 10px 20px;
     border: none;
     width: 82%;
     background-color: #00AFBC;
     padding: 16px;
-    color: white;
+    
     border-radius: 10px;
     font-size: 17px;
+    cursor: pointer;
+}
+.card-btn a{
+    color: white;
+    text-decoration: none;
 }

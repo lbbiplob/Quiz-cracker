@@ -4,4 +4,15 @@
     background-color: #00AFBC;
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    
 }
+.banner-info{
+ width: 40%;
+}
+.banner-img img{
+    width: 80%;
+}
+
