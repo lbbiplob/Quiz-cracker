@@ -1,0 +1,11 @@
+.quiz-details{
+    background-color: #F6F0E7;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.option-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

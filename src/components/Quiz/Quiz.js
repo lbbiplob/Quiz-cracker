@@ -4,7 +4,6 @@ import './Quiz.css'
 
 const Quiz = ({quiz}) => {
     const {id ,name , logo ,total } = quiz;
-    console.log(quiz);
     return (
         <div className='card'>
             <img src={logo} alt="" />
