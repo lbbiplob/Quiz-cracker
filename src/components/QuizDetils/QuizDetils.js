@@ -1,24 +1,30 @@
 import React from 'react';
 import QuizOption from '../QuizOPtion/QuizOption';
 import './QuizDetils.css';
- import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
 const QuizDetils = ({quiz }) => {
     const {correctAnswer, id , question, options} = quiz ;
 
-    console.log(quiz.id);
     const click = (selectAnswer)=>{
 
         if(selectAnswer === correctAnswer){
             toast("Wow correct answer");
-            console.log('kam hoyce vai ');
         }
+        else(
+            toast("Oops Wrong answer")
+        )
+        
     }
     return (
         <div className='quiz-details'>
             <div>
                 <h2>Quiz: {question} </h2>
+                <FontAwesomeIcon icon={faCoffee} />
             </div>
             <div className='option-container'>
                 {
