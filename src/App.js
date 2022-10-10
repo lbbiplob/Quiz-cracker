@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 import Layouts from './Layouts/Layouts';
 import Statistics from './components/Statistics/Statistics';
 import Blogs from './components/Blogs/Blogs';
-import Quiz from './components/Quiz/Quiz';
+import Quizes from './components/Quizes/Quizes';
 
 function App() {
   const router = createBrowserRouter([
@@ -24,7 +24,7 @@ function App() {
         },
         {
           path: 'quiz',
-          element: <Quiz></Quiz>
+          element: <Quizes></Quizes>
         },
         {
           path: 'statistics',

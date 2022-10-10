@@ -1,0 +1,25 @@
+.card{
+    border-radius: 10px;
+    background-color: #F6F0E7;
+}
+.card img {
+    margin: 4%;
+    width: 92%;
+    border-radius: 10px;
+}
+.card-info {
+    padding:5px 20px;
+}
+.card h3,p {
+    margin: 3px;
+}
+.card-btn{
+    margin: 10px 20px;
+    border: none;
+    width: 82%;
+    background-color: #00AFBC;
+    padding: 16px;
+    color: white;
+    border-radius: 10px;
+    font-size: 17px;
+}

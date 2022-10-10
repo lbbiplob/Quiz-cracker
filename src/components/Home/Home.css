@@ -1,0 +1,7 @@
+.home-banner{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #00AFBC;
+    border-radius: 10px;
+    display: flex;
+}
