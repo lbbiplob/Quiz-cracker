@@ -4,7 +4,7 @@ import './QuizDetils.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 
 const QuizDetils = ({quiz }) => {
@@ -13,18 +13,32 @@ const QuizDetils = ({quiz }) => {
     const click = (selectAnswer)=>{
 
         if(selectAnswer === correctAnswer){
-            toast("Wow correct answer");
+            toast.success("Wow correct answer",
+            {
+                position:'top-center',
+                autoClose: 3000,
+            }
+            );
         }
         else(
-            toast("Oops Wrong answer")
+            toast("Oops Wrong answer", {
+                position:'top-center',
+                autoClose: 1000,
+            })
         )
         
     }
+    const handelCorrectAnswer =() =>{
+        toast.success(correctAnswer ,{
+                position:'top-center',
+    
+            })
+    }
     return (
         <div className='quiz-details'>
-            <div>
+            <div className='quiz-name'>
                 <h2>Quiz: {question} </h2>
-                <FontAwesomeIcon icon={faCoffee} />
+                <FontAwesomeIcon onClick={handelCorrectAnswer} className='correct-answer-icon' icon={faEye} />
             </div>
             <div className='option-container'>
                 {

@@ -9,7 +9,7 @@ const StartQuiz = () => {
     console.log(start);
     return (
         <div className='quiz-container'>
-            <h1>{name}</h1>
+            <h1>Quiz of {name}</h1>
             {
                 questions.map( quiz => <QuizDetils key={id} name={name} quiz={quiz} ></QuizDetils>)
             }

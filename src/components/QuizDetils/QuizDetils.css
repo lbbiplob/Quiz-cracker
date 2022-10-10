@@ -4,7 +4,14 @@
     margin-bottom: 30px;
     border-radius: 10px;
 }
-
+.quiz-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.correct-answer-icon{
+    cursor: pointer;
+}
 .option-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
