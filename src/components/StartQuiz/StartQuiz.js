@@ -5,12 +5,13 @@ import './StartQuiz.css'
 
 const StartQuiz = () => {
     const start = useLoaderData();
-    const startQuizes = start.data.questions;
-    console.log(startQuizes);
+    const {id, name, questions }= start.data; 
+    console.log(start);
     return (
         <div className='quiz-container'>
+            <h1>{name}</h1>
             {
-                startQuizes.map( quiz => <QuizDetils key={ quiz.correctAnswer} quiz={quiz} ></QuizDetils>)
+                questions.map( quiz => <QuizDetils key={id} name={name} quiz={quiz} ></QuizDetils>)
             }
            
         </div>

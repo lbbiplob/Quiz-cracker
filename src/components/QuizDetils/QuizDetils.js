@@ -1,12 +1,17 @@
 import React from 'react';
 import QuizOption from '../QuizOPtion/QuizOption';
-import './QuizDetils.css'
+import './QuizDetils.css';
+ import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
-const QuizDetils = ({quiz}) => {
+const QuizDetils = ({quiz }) => {
     const {correctAnswer, id , question, options} = quiz ;
+
+    console.log(quiz.id);
     const click = (selectAnswer)=>{
-        console.log(selectAnswer);
-        if(selectAnswer=== correctAnswer){
+
+        if(selectAnswer === correctAnswer){
+            toast("Wow correct answer");
             console.log('kam hoyce vai ');
         }
     }
@@ -17,10 +22,12 @@ const QuizDetils = ({quiz}) => {
             </div>
             <div className='option-container'>
                 {
-                    options.map(option => <QuizOption key={option.id} click={click} option={option}></QuizOption>)
+                    options.map(option => <QuizOption key={id} click={click} correctAnswer={correctAnswer} option={option}></QuizOption>)
                 }
             </div>
+            <ToastContainer />
         </div>
+        
     );
 };
 

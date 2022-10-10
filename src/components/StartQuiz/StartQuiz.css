@@ -2,3 +2,11 @@
     width: 80%;
     margin: 0 auto;
 }
+
+.quiz-container h1{
+    text-align: center;
+    background-color: #F6F0E7;
+    padding: 10px;
+    border-radius: 10px;
+    color: #8F3B21;
+}
