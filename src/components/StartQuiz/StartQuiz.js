@@ -10,7 +10,10 @@ const StartQuiz = () => {
         <div className='quiz-container'>
             <h1>Quiz of {name}</h1>
             {
-                questions.map( quiz => <QuizDetils key={id}  quiz={quiz} ></QuizDetils>)
+                questions.map( (quiz , index ) =>{
+                    index= index +1 ;
+                return <QuizDetils key={id}  quiz={quiz} index={index}
+                 ></QuizDetils>})
             }
            
         </div>

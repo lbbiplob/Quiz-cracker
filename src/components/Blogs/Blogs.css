@@ -1,0 +1,20 @@
+.blog-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.blog-item{
+    background-color: #F6F0E7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 576px){
+    .blog-container{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './QuizOption.css'
 
-const QuizOption = ({option , click, correctAnswer}) => {
+const QuizOption = ({option , click}) => {
     
     return (
            <div  value={option} className='option'>

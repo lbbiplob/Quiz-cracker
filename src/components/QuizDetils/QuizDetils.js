@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 
-const QuizDetils = ({quiz}) => {
+const QuizDetils = ({quiz , index}) => {
     const {correctAnswer, id , question, options} = quiz ;
 
 
@@ -40,7 +40,7 @@ const QuizDetils = ({quiz}) => {
     return (
         <div className='quiz-details'>
             <div className='quiz-name'>
-                <h2>Quiz: {question.replaceAll('<p>', '' )} </h2>
+                <h2>Quiz: {index} {question.replaceAll('<p>', '' )} </h2>
                 <FontAwesomeIcon onClick={handelCorrectAnswer} className='correct-answer-icon' icon={faEye} />
             </div>
             <div className='option-container'>
