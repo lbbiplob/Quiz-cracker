@@ -40,7 +40,7 @@ const QuizDetils = ({quiz , index}) => {
     return (
         <div className='quiz-details'>
             <div className='quiz-name'>
-                <h2>Quiz: {index} {question.replaceAll('<p>', '' )} </h2>
+                <h2>Quiz: {index} {question.replace(/(<([^>]+)>)/ig, '')} </h2>
                 <FontAwesomeIcon onClick={handelCorrectAnswer} className='correct-answer-icon' icon={faEye} />
             </div>
             <div className='option-container'>

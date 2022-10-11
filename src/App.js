@@ -7,6 +7,7 @@ import Statistics from './components/Statistics/Statistics';
 import Blogs from './components/Blogs/Blogs';
 import Quizes from './components/Quizes/Quizes';
 import StartQuiz from './components/StartQuiz/StartQuiz';
+import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -42,8 +43,13 @@ function App() {
           path: 'blog',
           element: <Blogs></Blogs>
         }
-      ]
+      ],
+    },
+    {
+      path: '*',
+      element: <NotFoundPage></NotFoundPage>
     }
+
   ])
     
   

@@ -1,6 +1,5 @@
-import React, { PureComponent, useContext } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { useLoaderData } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,  ResponsiveContainer } from 'recharts';
 import './Statistics.css'
 import { QuizContext } from '../../Layouts/Layouts';
 
