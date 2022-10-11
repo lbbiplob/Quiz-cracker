@@ -6,12 +6,11 @@ import './StartQuiz.css'
 const StartQuiz = () => {
     const start = useLoaderData();
     const {id, name, questions }= start.data; 
-    console.log(start);
     return (
         <div className='quiz-container'>
             <h1>Quiz of {name}</h1>
             {
-                questions.map( quiz => <QuizDetils key={id} name={name} quiz={quiz} ></QuizDetils>)
+                questions.map( quiz => <QuizDetils key={id}  quiz={quiz} ></QuizDetils>)
             }
            
         </div>

@@ -5,10 +5,11 @@ import './Quizes.css'
 
 const Quizes = () => {
     const quizes = useContext(QuizContext)
+
     return (
         <div className='card-container'>
            {
-            quizes.map (quiz => <Quiz key={quiz.id} quiz={quiz} ></Quiz>)
+            quizes.map (quiz => <Quiz key={quiz.id} quiz={quiz}  ></Quiz>)
            }
         </div>
     );

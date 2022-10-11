@@ -1,4 +1,4 @@
-import React from 'react';
+
 import QuizOption from '../QuizOPtion/QuizOption';
 import './QuizDetils.css';
 import { ToastContainer, toast } from 'react-toastify';
@@ -7,8 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 
-const QuizDetils = ({quiz }) => {
+const QuizDetils = ({quiz}) => {
     const {correctAnswer, id , question, options} = quiz ;
+
 
     const click = (selectAnswer)=>{
 
@@ -34,10 +35,12 @@ const QuizDetils = ({quiz }) => {
     
             })
     }
+   
+    
     return (
         <div className='quiz-details'>
             <div className='quiz-name'>
-                <h2>Quiz: {question} </h2>
+                <h2>Quiz: {question.replaceAll('<p>', '' )} </h2>
                 <FontAwesomeIcon onClick={handelCorrectAnswer} className='correct-answer-icon' icon={faEye} />
             </div>
             <div className='option-container'>

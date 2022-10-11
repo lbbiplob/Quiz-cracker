@@ -1,6 +1,7 @@
 import React from 'react';
 import Quizes from '../Quizes/Quizes';
-import Homephoto from '../../images/Home-photo.png'
+import HomePhoto from '../../images/HomePhoto.png'
+
 import './Home.css'
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className='banner-img'>
-                    <img src={Homephoto} alt="" />
+                    <img src={HomePhoto} alt="" />
                 </div>
             </div>
             <div>

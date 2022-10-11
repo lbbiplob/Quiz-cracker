@@ -10,7 +10,7 @@ const Quiz = ({quiz}) => {
             <div className='card-info'>
                 <h3>Quiz Name: {name}</h3>
                 <p>Total quiz: {total} </p>
-                 <button className='card-btn'> <Link to={`/quiz/${id}`} >Start {name} Quiz</Link> </button>
+                 <button  className='card-btn'> <Link to={`/quiz/${id}`} >Start {name} Quiz</Link> </button>
             </div>
             
         </div>
